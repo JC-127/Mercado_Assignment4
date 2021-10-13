@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ghostRider_names">
+        <item>The Ghost Rider</item>
+        <item>Flaming Head Look</item>
+        <item>The Penance Stare</item>
+        <item>The Rider Scream</item>
+        <item>Breaking out of Jail</item>
+    </string-array>
+    <string-array name="ghostRider_descriptions">
+        <item>The Rider Himself</item>
+        <item>My Head is on Fire!</item>
+        <item>Look into my eyes</item>
+        <item>I scream for Ice Cream</item>
+        <item>That's it! I am out!</item>
+    </string-array>
+
+</resources>

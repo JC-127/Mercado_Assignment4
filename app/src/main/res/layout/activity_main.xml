@@ -11,7 +11,7 @@
         android:layout_width="217dp"
         android:layout_height="71dp"
         android:layout_marginTop="32dp"
-        android:text="Select a Rider"
+        android:text="@string/prompt"
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"

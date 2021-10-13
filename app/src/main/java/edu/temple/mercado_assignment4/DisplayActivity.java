@@ -14,7 +14,7 @@ public class DisplayActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_activity);
-        this.setTitle("Display Activity");
+        this.setTitle(SelectionActivity.res.getString(R.string.second_screen_name));
 
         Intent intent = getIntent();
         String name = intent.getStringExtra(SelectionActivity.NAME);

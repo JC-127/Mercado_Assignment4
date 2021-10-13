@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ghostRider_names">
+        <item>Le cavalier fantôme</item>
+        <item>Regard de tête enflammée</item>
+        <item>Le regard de pénitence</item>
+        <item>Le cri du cavalier</item>
+        <item>S'évader de prison</item>
+    </string-array>
+    <string-array name="ghostRider_descriptions">
+        <item>Le cavalier lui-même</item>
+        <item>Ma tête est en feu !</item>
+        <item>Regarde-moi dans les yeux</item>
+        <item>Je crie pour la crème glacée</item>
+        <item>C'est ça! Je suis dehors!</item>
+    </string-array>
+
+</resources>

@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">Mercado_Assignment4</string>
+    <string name="app_name">Selection Activity</string>
+    <string name="second_screen_name">Display Activity</string>
+    <string name="display_name">Displaying Selected Rider:</string>
+    <string name="launcher_name">Ghost Rider Viewer App</string>
+    <string name="prompt">Please Select a Rider:</string>
+    <string name="intent_rider_name">edu.temple.mercado_assignment4.NAME</string>
+    <string name="intent_rider_desc">edu.temple.mercado_assignment4.DESC</string>
+    <string name="intent_rider_img">edu.temple.mercado_assignment4.IMG</string>
 </resources>

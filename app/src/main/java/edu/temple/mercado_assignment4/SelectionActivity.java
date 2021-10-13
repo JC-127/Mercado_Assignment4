@@ -3,6 +3,7 @@ package edu.temple.mercado_assignment4;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -20,20 +21,30 @@ public class SelectionActivity extends AppCompatActivity
     int[] riderImgArray;
     ArrayList<Picture> riderArray;
 
-    public static final String NAME = "edu.temple.cis3515_assignment4.NAME";
-    public static final String DESC = "edu.temple.cis3515_assignment4.DESC";
-    public static final String IMG = "edu.temple.cis3515_assignment4.IMG";
+    public static Resources res;
+
+    public static final String NAME = "edu.temple.mercado_assignment4.NAME";
+    public static final String DESC = "edu.temple.mercado_assignment4.DESC";
+    public static final String IMG = "edu.temple.mercado_assignment4.IMG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        this.setTitle("Selection Activity");
+
+        res = getResources();
+        this.setTitle(res.getString(R.string.app_name));
 
         //Get our Views by ID
         gridview = findViewById(R.id.gridView);
         textView = findViewById(R.id.prompt);
+
+        String[] riderNames = res.getStringArray(R.array.ghostRider_names);
+        String[] riderDesc = res.getStringArray(R.array.ghostRider_descriptions);
+        riderArray = new ArrayList<Picture>();
+        for(int i = 0; i < riderNames.length; i++)
+            riderArray.add(new Picture(riderNames[i],riderDesc[i]));
 
         //Make an ArrayList of Cat Objects
         riderArray = new ArrayList<Picture>();
@@ -42,11 +53,7 @@ public class SelectionActivity extends AppCompatActivity
         riderArray.add(new Picture("Ghost Rider 2", "Rider 2"));
         riderArray.add(new Picture("Ghost Rider 3", "Rider 3"));
         riderArray.add(new Picture("Ghost Rider 4", "Rider 4"));
-        riderArray.add(new Picture("Ghost Rider 5", "Rider 5"));
-        riderArray.add(new Picture("Ghost Rider 6", "Rider 6"));
-        riderArray.add(new Picture("Ghost Rider 7", "Rider 7"));
-        riderArray.add(new Picture("Ghost Rider 8", "Rider 8"));
-        riderArray.add(new Picture("Ghost Rider 9", "Rider 9"));
+
 
 
 
@@ -57,11 +64,6 @@ public class SelectionActivity extends AppCompatActivity
                 R.drawable.ghost_rider2,
                 R.drawable.ghost_rider3,
                 R.drawable.ghost_rider4,
-                R.drawable.ghost_rider5,
-                R.drawable.ghost_rider6,
-                R.drawable.ghost_rider7,
-                R.drawable.ghost_rider8,
-                R.drawable.ghost_rider9
         };
 
         for(int i = 0; i < riderArray.size(); i++)
